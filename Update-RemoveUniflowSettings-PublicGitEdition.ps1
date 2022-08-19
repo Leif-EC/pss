@@ -11,7 +11,7 @@
 Set-ExecutionPolicy Bypass -scope Process -Force
 
 #Stop services and processes for Uniflow Smart Client that would otherwise prevent deleting the application
-Stop-process -Name momsmartclnt -ErrorAction SilentlyContinue momsmartclnt.exe
+Stop-process -Name momsmartclnt -ErrorAction SilentlyContinue
 Stop-Service -Name "MsclPrProxy" -ErrorAction SilentlyContinue
 
 #Delete files associated with the Uniflow Smart Client
